@@ -19,6 +19,12 @@ a {
   @include my-mixin
 }
 
+$animation-duration: 300ms;
+$animation-function: ease-in-out;
+.d {
+  transition: all $animation-duration $animation-function;
+}
+
 // Vue
 :global(.foo),
 ::v-deep(.foo),
